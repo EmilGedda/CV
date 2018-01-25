@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% Modified for use for:
+% Emil Gedda
+% 
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{xltxtra,xunicode}
+\usepackage{fontspec}
+\usepackage{fontawesome} % Website icons
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Font Awesome 5 Free} % Main document font
+\setsansfont{Times New Roman} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{104b87} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%-------------------------------------------------------------------------------
+%	TITLE
+%-------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Emil Gedda}\\ % Your name
+%{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+	
+%-------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%-------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\textsc{Aug 2016 -- July 2017}\par}
+
+{\raggedright\large Teaching assistant\\ \textit{KTH Royal Institute of Technology}\\[5pt]}
+
+    \normalsize{Teaching assistant in \textsc{DD1361: Programming Paradigms}, an introductory course into different programming paradigms, such as functional programming in Haskell, and logic programming in Prolog. Regarded as the most educational among the Teaching Assistants that year, with extensive knowledge in all of the subjects in the course.}\\
+
+{\raggedleft\textsc{Summer 2016}\par}
+
+{\raggedright\large Consultant\\ \textit{Student Academy}\\[5pt]}
+
+    \normalsize{Working at PostNord (The swedish governmental postal service) using their equipment and software to electronically sort letters and packages.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft\textsc{Summer 2010}\par}
+
+{\raggedright\large  Software Developer\\ \textit{OpenRatio}\\[5pt]}
+
+\normalsize{Summer intern and developer of their Windows Phone platform, writing pure C\# for their enterprise mobile platform. Their platform enabled clients to develop cross platform apps and manage said apps without any programming knowledge, using a platform-independent web interface.}\\
+
+\section{Projects}
+
+{\raggedleft\textsc{Spring 2016}\par}
+
+{\raggedright\large Wikipagestats\\ \textit{Project manager on a pro bono project for
+    Wikimedia}  \\ \small URL:
+    \href{https://tools.wmflabs.org/wikipagestats/}{https://tools.wmflabs.org/wikipagestats/} \\[5pt]}
+
+\normalsize{As a part of the course \textsc{DD1392: Software
+    Engineering}, my team developed a tool for Wikimedia Foundation. The tool, \textit{wikipagestats},
+    allows a user to easily compare the page views between articles across
+    all Wikimedia projects, such as the popular encyclopedia Wikipedia. My team
+    finished the course with the highest grade, with a finished product which
+    is still in use. }\\
+
+{\raggedleft\textsc{Summer and Fall 2016}\par}
+
+{\raggedright\large Hattis\\ \textit{Spare time project}\\ \small URL: \href{https://www.github.com/EmilGedda/hattis}{https://github.com/EmilGedda/hattis}\\[5pt]}
+
+
+\normalsize{Hattis is a simple command line interface tool for the online
+    programming problem judge, kattis. Hattis allows users to submit solutions
+    and track the submission progress live, all from the command line. The tool is
+    written in Haskell, exercising modern techniques regarding error
+    handling and correctness.}\\
+
+%-------------------------------------------------------------------------------	
+
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%-------------------------------------------------------------------------------
+%	COLORED BOX
+%-------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & Schönfeldts gränd 1, 111 27 Stockholm \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +46707505910 \\ % Phone number
+\raisebox{-1pt}{\Letter} &
+    \href{mailto:emil.gedda@emilgedda.se}{emil.gedda@emilgedda.se} \\
+    \faLinkedin &
+    \href{https://www.linkedin.com/EmilGedda}{https://linkedin.com/EmilGedda}
+    \\
+    \faGithub &
+    \href{https://www.github.com/EmilGedda}{https://github.com/EmilGedda}
+    \\ % Website // TODO: Add LinkedIn icon nd GitHub url
+\end{tabular}
+}
+}\\[10pt]
+
+%-------------------------------------------------------------------------------
+%	EDUCATION
+%-------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{ll} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% Master of Science
+%------------------------------------------------
+
+2018 -- \textsc{Present} & \textbf{Master of Science} \\ 
+& \textsc{Computer Science} \\ 
+& \textit{KTH Royal Institute of Technology}\\
+&\\
+	 
+2017 -- 2018 & \textbf{Master of Science} \\ 
+& \textsc{Computer Science} \\ 
+& \small Exchange studies in USA\\
+& \textit{University of Illinois at} \\
+& \textit{Urbana-Champaign} \\
+&\\
+%------------------------------------------------
+% Bachelor of Science
+%------------------------------------------------
+
+2014 -- 2017 & \textbf{Bachelor of Science} \\ 
+& \textsc{Computer Science} \\ 
+& \textit{KTH Royal Institute of Technology}\\
+&\\
+	
+%-------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+\section{Publications}
+
+{\raggedleft\textsc{Spring 2017}\par}
+
+{\raggedright\large Analysis of The Precision Time Protocol under different
+    forms of system load\\ \textit{Bachelor Thesis} \\[2pt] \small URN:
+    \href{http://www.diva-portal.org/smash/record.jsf?pid=diva2:1106630}{urn:nbn:se:kth:diva-208493}\\[5pt]}
+
+    \normalsize{Evaluted the most popular implementation of
+    the Precision Time Protocol, \textsc{IEEE1588}, under different types of system
+    load. This involved setting up a local network of devices and synchronizing
+    their system clocks while stressing different subsystems of the connected
+    devices. The results showed that the accuracy and precision of PTP suffers
+    greatly when a client is under heavy load.}\\
+
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%-------------------------------------------------------------------------------
+
+\section{Computer Skills} 
+
+\begin{tabular}{ll}
+Basic
+    & Golang, MVC, MATLAB\\[4pt]
+Intermediate
+& \textsc{python}, \textsc{css/html}, \LaTeX,\\
+& JavaScript, x86 ASM, SQL,\\
+    & git, \textsc{C\#}, Bash, Vim \\[4pt]
+Advanced
+& C11, C++17, GNU/Linux, \\
+    & Haskell, \textsc{java}, Prolog \\[4pt]
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%-------------------------------------------------------------------------------
+
+\section{Communication Skills} 
+
+\begin{tabular}{ll}
+\textsc{Native speaker}
+    &  Swedish, Norwegian\\[4pt]
+    \textsc{Professional proficiency}
+    & English\\[4pt]
+\textsc{Conversational}
+    & German\\[4pt]
+\end{tabular}\\[4pt]
+
+%-------------------------------------------------------------------------------
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
