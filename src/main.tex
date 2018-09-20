@@ -25,9 +25,9 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
-\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+\documentclass[11pt]{article} % Font size - 10pt, 11pt or 12pt
 
-\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+\usepackage[hmargin=1.25cm, vmargin=2cm]{geometry} % Document margins
 
 \usepackage{marvosym} % Required for symbols in the colored box
 \usepackage{ifsym} % Required for symbols in the colored box
@@ -56,6 +56,8 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
+\cfoot{\thepage}
+
 % Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
 % Example footer:
 %\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
@@ -78,13 +80,12 @@
 %	TITLE
 %-------------------------------------------------------------------------------
 
-\par{\centering{\sffamily\Huge Emil Gedda}\\ % Your name
+\par{\centering{\sffamily\Huge EMIL GEDDA}\\[1cm] % Your name
 %{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
 	
 %-------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
-\vspace{0pt} % Trick for alignment
 	
 %-------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -92,15 +93,22 @@
 
 \section{Work Experience} 
 
+{\raggedleft\textsc{Jun 2018 -- Current}\par}
+
+{\raggedright\large Software Developer\\ \textit{SAAB Group}\\[5pt]}
+
+    \normalsize{Software Developer at SAAB Group, Electronic Warfare department. Writing C++98/14 and using modern tools such as Jenkins, Docker, google test, and clang 6.}\\
+
 %------------------------------------------------
 % WORK EXPERIENCE 1
 %------------------------------------------------
-
-{\raggedleft\textsc{Aug 2016 -- July 2017}\par}
+{\raggedleft\textsc{Aug 2016 -- Aug 2018}\par}
 
 {\raggedright\large Teaching assistant\\ \textit{KTH Royal Institute of Technology}\\[5pt]}
 
-    \normalsize{Teaching assistant in \textsc{DD1361: Programming Paradigms}, an introductory course into different programming paradigms, such as functional programming in Haskell, and logic programming in Prolog. Regarded as the most educational among the Teaching Assistants that year, with extensive knowledge in all of the subjects in the course.}\\
+    \normalsize{Teaching assistant in \textsc{DD1361: Programming Paradigms}, an introductory course into different programming paradigms, such as functional programming in Haskell, and logic programming in Prolog. }\\
+
+    \normalsize{Teaching assistant in \textsc{DD1388: Program System Construction Using C++}. The course aims to teach students C++98/11/14 and how to apply the standard library while writing efficient, testable code.}\\
 
 {\raggedleft\textsc{Summer 2016}\par}
 
@@ -118,39 +126,12 @@
 
 \normalsize{Summer intern and developer of their Windows Phone platform, writing pure C\# for their enterprise mobile platform. Their platform enabled clients to develop cross platform apps and manage said apps without any programming knowledge, using a platform-independent web interface.}\\
 
-\section{Projects}
 
-{\raggedleft\textsc{Spring 2016}\par}
-
-{\raggedright\large Wikipagestats\\ \textit{Project manager on a pro bono project for
-    Wikimedia}  \\ \small URL:
-    \href{https://tools.wmflabs.org/wikipagestats/}{https://tools.wmflabs.org/wikipagestats/} \\[5pt]}
-
-\normalsize{As a part of the course \textsc{DD1392: Software
-    Engineering}, my team developed a tool for Wikimedia Foundation. The tool, \textit{wikipagestats},
-    allows a user to easily compare the page views between articles across
-    all Wikimedia projects, such as the popular encyclopedia Wikipedia. My team
-    finished the course with the highest grade, with a finished product which
-    is still in use. }\\
-
-{\raggedleft\textsc{Summer and Fall 2016}\par}
-
-{\raggedright\large Hattis\\ \textit{Spare time project}\\ \small URL: \href{https://www.github.com/EmilGedda/hattis}{https://github.com/EmilGedda/hattis}\\[5pt]}
-
-
-\normalsize{Hattis is a simple command line interface tool for the online
-    programming problem judge, kattis. Hattis allows users to submit solutions
-    and track the submission progress live, all from the command line. The tool is
-    written in Haskell, exercising modern techniques regarding error
-    handling and correctness.}\\
-
-%-------------------------------------------------------------------------------	
 
 
 \end{minipage} % End the left-hand side of the page
 \hfill
 \begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
-\vspace{0pt} % Trick for alignment
 
 %-------------------------------------------------------------------------------
 %	COLORED BOX
@@ -158,7 +139,7 @@
 
 \colorbox{shade}{\textcolor{text1}{
 \begin{tabular}{c|p{7cm}}
-\raisebox{-4pt}{\textifsymbol{18}} & Schönfeldts gränd 1, 111 27 Stockholm \\ % Address
+\raisebox{-4pt}{\textifsymbol{18}} & Ernst Ahlgrens väg 4, 11255 Stockholm \\ % Address
 \raisebox{-3pt}{\Mobilefone} & +46707505910 \\ % Phone number
 \raisebox{-1pt}{\Letter} &
     \href{mailto:emil.gedda@emilgedda.se}{emil.gedda@emilgedda.se} \\
@@ -167,7 +148,7 @@
     \\
     \faGithub &
     \href{https://www.github.com/EmilGedda}{https://github.com/EmilGedda}
-    \\ % Website // TODO: Add LinkedIn icon nd GitHub url
+    \\
 \end{tabular}
 }
 }\\[10pt]
@@ -208,7 +189,65 @@
 
 \end{tabular}\\[10pt]
 
-\section{Publications}
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%-------------------------------------------------------------------------------
+
+\section{Skills} 
+
+\begin{tabular}{ll}
+Basic
+    & Golang, MVC, MATLAB\\[4pt]
+Intermediate
+& \textsc{python}, \textsc{css/html}, \LaTeX,\\
+& JavaScript, x86 ASM, SQL,\\
+    & git, \textsc{C\#}, Bash, Vim, IT Security \\[4pt]
+Advanced
+& C11, C++17, GNU/Linux, \\
+    & Haskell, \textsc{java}, Prolog \\[4pt]
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%-------------------------------------------------------------------------------
+
+\section{Interests} 
+
+Backend systems, high performant C++ code, and compiler construction are my key
+interests. I also find reverse engineering, pentesting and IT security in
+general very intriguing.
+
+%-------------------------------------------------------------------------------
+\end{minipage} % End right-hand side of the page
+\clearpage
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\section{Projects}
+
+{\raggedleft\textsc{Spring 2016}\par}
+
+{\raggedright\large kOS x86\_64 OS\\ \textit{Current spare time project}  \\ \small URL:
+    \href{https://tools.wmflabs.org/wikipagestats/}{https://tools.wmflabs.org/wikipagestats/} \\[5pt]}
+
+    \normalsize{kOS is a 64bit operating system for the x86 platform. kOS is written in C++2a using libc++, libc++abi, and libunwind. kOS
+        is still very much in its planning stages. kOS will feature a microkernel designed for fast IPC and modularity, while still being simple enough for educational purposes.}\\
+
+{\raggedleft\textsc{Summer and Fall 2016}\par}
+
+{\raggedright\large Hattis\\ \textit{Spare time project}\\ \small URL: \href{https://www.github.com/EmilGedda/hattis}{https://github.com/EmilGedda/hattis}\\[5pt]}
+
+
+\normalsize{Hattis is a simple command line interface tool for the online
+    programming problem judge, kattis. Hattis allows users to submit solutions
+    and track the submission progress live, all from the command line. The tool is
+    written in Haskell, exercising modern techniques regarding error
+    handling and correctness.}\\
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+%-------------------------------------------------------------------------------	
+\section{Papers}
 
 {\raggedleft\textsc{Spring 2017}\par}
 
@@ -224,40 +263,6 @@
     greatly when a client is under heavy load.}\\
 
 
-%-------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%-------------------------------------------------------------------------------
-
-\section{Computer Skills} 
-
-\begin{tabular}{ll}
-Basic
-    & Golang, MVC, MATLAB\\[4pt]
-Intermediate
-& \textsc{python}, \textsc{css/html}, \LaTeX,\\
-& JavaScript, x86 ASM, SQL,\\
-    & git, \textsc{C\#}, Bash, Vim \\[4pt]
-Advanced
-& C11, C++17, GNU/Linux, \\
-    & Haskell, \textsc{java}, Prolog \\[4pt]
-\end{tabular}
-
-%-------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS
-%-------------------------------------------------------------------------------
-
-\section{Communication Skills} 
-
-\begin{tabular}{ll}
-\textsc{Native speaker}
-    &  Swedish, Norwegian\\[4pt]
-    \textsc{Professional proficiency}
-    & English\\[4pt]
-\textsc{Conversational}
-    & German\\[4pt]
-\end{tabular}\\[4pt]
-
-%-------------------------------------------------------------------------------
 	
 \end{minipage} % End right-hand side of the page
 
