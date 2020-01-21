@@ -25,7 +25,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %-------------------------------------------------------------------------------
 
-\documentclass[11pt]{article} % Font size - 10pt, 11pt or 12pt
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
 
 \usepackage[hmargin=1.25cm, vmargin=2cm]{geometry} % Document margins
 
@@ -39,8 +39,8 @@
 \usepackage{fontspec}
 \usepackage{fontawesome} % Website icons
 \defaultfontfeatures{Mapping=tex-text}
-%\setromanfont[Mapping=tex-text]{Font Awesome 5 Free} % Main document font
-\setsansfont{Times New Roman} % Font for your name at the top
+%\setromanfont{Font Awesome 5 Free} % Main document font
+%\setsansfont{Times New Roman} % Font for your name at the top
 %\setmonofont[Scale=MatchLowercase]{Andale Mono}
 
 % Colors for links, text and headings
@@ -80,7 +80,7 @@
 %	TITLE
 %-------------------------------------------------------------------------------
 
-\par{\centering{\sffamily\Huge EMIL GEDDA}\\[1cm] % Your name
+\par{\centering{\sffamily\Huge Emil Gedda}\\[1cm] % Your name
 %{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
 	
 %-------------------------------------------------------------------------------
@@ -93,7 +93,13 @@
 
 \section{Work Experience} 
 
-{\raggedleft\textsc{Jun 2018 -- Current}\par}
+{\raggedleft\textsc{Summer 2019}\par}
+
+{\raggedright\large Software Engineering Intern\\ \textit{EF Education First}\\[5pt]}
+
+    \normalsize{Software Intern at EF Class in Chelsea, London. Working with microservices in Go orchestrated by Kubernetes on AWS.}\\
+
+{\raggedleft\textsc{Jun 2018 -- Jun 2019}\par}
 
 {\raggedright\large Software Developer\\ \textit{SAAB Group}\\[5pt]}
 
@@ -110,23 +116,15 @@
 
     \normalsize{Teaching assistant in \textsc{DD1388: Program System Construction Using C++}. The course aims to teach students C++98/11/14 and how to apply the standard library while writing efficient, testable code.}\\
 
-{\raggedleft\textsc{Summer 2016}\par}
-
-{\raggedright\large Consultant\\ \textit{Student Academy}\\[5pt]}
-
-    \normalsize{Working at PostNord (The swedish governmental postal service) using their equipment and software to electronically sort letters and packages.}\\
-
 %------------------------------------------------
 % WORK EXPERIENCE 3
 %------------------------------------------------
 
 {\raggedleft\textsc{Summer 2010}\par}
 
-{\raggedright\large  Software Developer\\ \textit{OpenRatio}\\[5pt]}
+{\raggedright\large Software Developer\\ \textit{OpenRatio}\\[5pt]}
 
 \normalsize{Summer intern and developer of their Windows Phone platform, writing pure C\# for their enterprise mobile platform. Their platform enabled clients to develop cross platform apps and manage said apps without any programming knowledge, using a platform-independent web interface.}\\
-
-
 
 
 \end{minipage} % End the left-hand side of the page
@@ -196,14 +194,12 @@
 \section{Skills} 
 
 \begin{tabular}{ll}
-Basic
-    & Golang, MVC, MATLAB\\[4pt]
 Intermediate
 & \textsc{python}, \textsc{css/html}, \LaTeX,\\
 & JavaScript, x86 ASM, SQL,\\
-    & git, \textsc{C\#}, Bash, Vim, IT Security \\[4pt]
+    & git, \textsc{C\#}, Bash, Golang, IT Security \\[4pt]
 Advanced
-& C11, C++17, GNU/Linux, \\
+& C18, C++20, GNU/Linux, \\
     & Haskell, \textsc{java}, Prolog \\[4pt]
 \end{tabular}
 
@@ -214,8 +210,7 @@ Advanced
 \section{Interests} 
 
 Backend systems, high performant C++ code, and compiler construction are my key
-interests. I also find reverse engineering, pentesting and IT security in
-general very intriguing.
+interests. I also find reverse engineering, pentesting and IT security in very intriguing.
 
 %-------------------------------------------------------------------------------
 \end{minipage} % End right-hand side of the page
@@ -227,7 +222,7 @@ general very intriguing.
 {\raggedleft\textsc{Spring 2016}\par}
 
 {\raggedright\large kOS x86\_64 OS\\ \textit{Current spare time project}  \\ \small URL:
-    \href{https://tools.wmflabs.org/wikipagestats/}{https://tools.wmflabs.org/wikipagestats/} \\[5pt]}
+    \href{https://github.com/EmilGedda/kOS}{https://github.com/EmilGedda/kOS} \\[5pt]}
 
     \normalsize{kOS is a 64bit operating system for the x86 platform. kOS is written in C++2a using libc++, libc++abi, and libunwind. kOS
         is still very much in its planning stages. kOS will feature a microkernel designed for fast IPC and modularity, while still being simple enough for educational purposes.}\\
